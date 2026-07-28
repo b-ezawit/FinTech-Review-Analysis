@@ -1,0 +1,13 @@
+# Data and local outputs
+data/
+*.csv
+*.db
+*.sqlite
+
+# Python/IDE
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.vscode/
+.idea/

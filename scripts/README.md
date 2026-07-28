@@ -1,0 +1,12 @@
+google-play-scraper>=0.2.2
+pandas>=2.0.0
+numpy>=1.24.0
+transformers>=4.30.0
+torch>=2.0.0
+scikit-learn>=1.2.0
+spacy>=3.5.0
+psycopg2-binary>=2.9.0
+sqlalchemy>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pytest>=7.0.0
