@@ -66,11 +66,10 @@ def main():
     # 3. Run thematic pipeline
     df = apply_thematic_analysis(df)
     
-    # 4. Format columns to match exact requirements: review_id, review_text, sentiment_label, sentiment_score, identified_theme
-    # Rename 'review' column to 'review_text' to match instructions exactly
-    df = df.rename(columns={'review': 'review_text'})
+    # 4. Format columns: rename review to review_text, keep bank, rating, and date
+    df = df.rename(columns={'review': 'review_text', 'date': 'review_date'})
     
-    final_columns = ['review_id', 'review_text', 'sentiment_label', 'sentiment_score', 'identified_theme']
+    final_columns = ['review_id', 'bank', 'review_text', 'rating', 'review_date', 'sentiment_label', 'sentiment_score', 'identified_theme']
     output_df = df[final_columns]
     
     # 5. Save results to CSV
